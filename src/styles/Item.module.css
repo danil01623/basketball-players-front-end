@@ -1,0 +1,49 @@
+.pageContainer {
+  margin-top: 3%;
+}
+
+.backButton {
+  display: flex;
+  padding-left: 10%;
+  margin-bottom: 5%;
+}
+
+.itemContainer {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  margin: 10% auto;
+  border: 1px solid yellow;
+  padding: 1.5rem;
+}
+.itemImg img {
+  max-width: 300px;
+}
+
+.itemInfo {
+  color: yellow;
+  margin-left: 25%;
+}
+.itemInfo h2 {
+  text-align: center;
+}
+
+.additionalInfo {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 584px) {
+  .itemContainer {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .additionalInfo {
+    flex-direction: column;
+  }
+  .boxContainer {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
