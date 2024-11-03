@@ -28,7 +28,7 @@ export const useHttpClient = () => {
 
         const responseData = await response.json();
 
-        // clear abort controllers for the request that just finished
+        // clear abort controllers for request that just finished
 
         activeHttpRequest.current = activeHttpRequest.current.filter(
           (reqCtrl: unknown) => reqCtrl !== httpAbortCtrl
