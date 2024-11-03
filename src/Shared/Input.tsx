@@ -10,7 +10,7 @@ interface InputProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input: React.FC<InputProps> = ({
+const Input = ({
   label,
   name,
   value,
@@ -18,7 +18,7 @@ const Input: React.FC<InputProps> = ({
   placeholder = "",
   error,
   onChange,
-}) => {
+}: InputProps) => {
   return (
     <div style={{ marginBottom: "1rem" }}>
       <label

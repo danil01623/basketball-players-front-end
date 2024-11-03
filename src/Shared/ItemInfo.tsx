@@ -1,6 +1,8 @@
 import { Player } from "../Models/player.model";
-
-const ItemInfo: React.FC<{ item: Player }> = (props) => {
+interface ItemInfoInterface {
+  item: Player;
+}
+const ItemInfo = (props: ItemInfoInterface) => {
   const { item } = props;
 
   return (

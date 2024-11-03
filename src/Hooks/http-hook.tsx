@@ -5,6 +5,7 @@ export const useHttpClient = () => {
   const [error, setError] = useState<object | null>();
 
   // Avoiding rerender same
+  // assign any - not a good solution but avoid errors for now
   const activeHttpRequest = useRef<any>([]);
 
   const sendRequest = useCallback(
